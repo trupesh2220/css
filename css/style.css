@@ -1,0 +1,1291 @@
+/* ========================================= Barlow font connectivity ==========================================  */
+
+/* barlow-regular - latin */
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/barlow-v12-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/barlow-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/barlow-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/barlow-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/barlow-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/barlow-v12-latin-regular.svg#Barlow') format('svg'); /* Legacy iOS */
+  }
+
+/* ========================================= Barlow Condensed font connectivity ==========================================  */
+
+
+  /* barlow-condensed-regular - latin */
+@font-face {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/barlow-condensed-v12-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/barlow-condensed-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/barlow-condensed-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/barlow-condensed-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/barlow-condensed-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/barlow-condensed-v12-latin-regular.svg#BarlowCondensed') format('svg'); /* Legacy iOS */
+  }
+
+
+/* ========================================= Gilda Display font connectivity ==========================================  */
+
+
+  /* gilda-display-regular - latin */
+@font-face {
+    font-family: 'Gilda Display';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/gilda-display-v13-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/gilda-display-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/gilda-display-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/gilda-display-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/gilda-display-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/gilda-display-v13-latin-regular.svg#GildaDisplay') format('svg'); /* Legacy iOS */
+  }
+
+/* =========================================  font connectivity  end ==========================================  */
+
+/* =========================================  custom css start ==========================================  */
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+    padding: 0 12px;
+}
+body
+{
+    font-family: 'Barlow', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    /* font-family: 'Gilda Display', serif; */
+}
+a{
+    text-decoration: none;
+}
+ol,ul{  
+    list-style: none;
+}
+.flex{
+    display: flex;
+}
+.space_between{
+    justify-content: space-between;
+}
+.align_center{
+    align-items: center;
+}
+.justify_center{
+    justify-content: center;
+}
+.justify_evenly{
+    justify-content: space-evenly;
+}
+.text_align_center{
+    text-align: center;
+}
+:root{
+    --orange_for_headers:#AA8453;
+    --white:#fff;
+    --black:#000;
+    --orange: #E4A853;
+    --background:#f8f5f0;
+    --black_background:#222222;
+    --gray:#666;
+    --lb:#F8F5F0;
+}
+.position_relative{
+    position: relative;
+}
+.padding_top{
+    padding-top: 120px;
+}
+.padding_bottom{
+    padding-bottom: 120px;
+}
+::selection{
+    background-color: var(--orange_for_headers);
+    color: var(--white);
+}
+.section_subtitle {
+    font-size: 20px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 6px;
+    margin-bottom: 5px;
+    padding-top: 20px;
+}
+.section_title{
+    font-size: 45px;
+    font-family: 'Gilda Display', serif;
+    font-weight: 400;
+    color: var(--black);
+    position: relative;
+    margin-bottom: 20px;
+    line-height: 1.25em;
+}
+/* =========================================  custom css end ==========================================  */
+/* =========================================  header css start ==========================================  */
+
+.color_orange{
+    color: var(--orange_for_headers)!important;
+}
+.bg_theme{
+    position: fixed;
+    /* top: 0%; */
+    width: 100%;
+    z-index: 9999;
+    color: wheat;
+    background-color: var(--white);
+}
+
+
+.nav_bar_container{
+    /* height: 117px; */
+}
+.logo img{
+    width: 198px;
+}
+.container .main_menu li a{
+    display: block;
+    letter-spacing: 3px;
+    color: var(--black);
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.container .main_menu li{
+    display: inline-block;
+    position: relative;
+    padding: 45px 13px;
+}
+.container .main_menu li a i{
+    font-size: 15px;
+    padding-left: 5px;
+    
+}
+.container .main_menu li:hover a{
+    color: var(--orange_for_headers);
+}
+.container .main_menu li:hover .sub_menu{
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+}
+.container .main_menu .sub_menu{
+    position: absolute;
+    top: 130%;
+    background-color: var(--white);
+    width: 250px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    z-index: 0;
+    padding-left: 20px;
+    left: -20px;
+    
+}
+.container .main_menu .sub_menu li{
+    
+    width: 100%;
+    padding: 10px;
+}
+.container .main_menu .sub_menu li a{
+    padding: 5px;
+    transition: .3s;
+    color: black;
+    text-transform: capitalize;
+}
+.container .main_menu .sub_menu li:hover a
+{
+    padding: 5px 20px;
+    color: var(--orange_for_headers);
+}
+
+
+/* =========================================  header css start ==========================================  */
+/* =========================================  owl carousel  css start ==========================================  */
+
+.section_slider_1{
+    position: relative;
+}
+#slider_1 img{
+    width: 100%;
+    height: 100%;
+}
+
+#slider_1 .slider_1_img_1{
+    background-image: url(../imges/asset\ 33.jpeg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+#slider_1 .slider_1_img_2{
+    background-image: url(../imges/asset\ 32.jpeg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+#slider_1 .slider_1_img_3{
+    background-image: url(../imges/asset\ 31.jpeg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+#slider_1.owl-theme .owl-dots{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5%;
+}
+
+#slider_1.owl-theme .owl-dots .owl-dot{
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+#slider_1.owl-theme .owl-dots .owl-dot span{
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 1px solid var(--white);
+}
+
+#slider_1.owl-theme .owl-dots .owl-dot.active span{
+    background-color: var(--orange_for_headers);
+}
+    
+
+#slider_1 .owl_container{
+    width: 1140px;
+    height: 400px;
+    /* border: 2px solid black; */
+    font-family: "Gilda Display", serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+#slider_1 .owl_container ul{
+    width: 100%;
+}
+#slider_1 .owl_container ul li{
+    display: inline-block;
+    text-align: center;
+}
+#slider_1 .owl_container ul li a i{
+    text-align: center;
+    padding: 3px;
+    color: var(--orange);
+}
+#slider_1 .owl_container h1,
+#slider_1 .owl_container h4{
+    text-align: center;
+    font-weight: 400;
+
+}
+#slider_1 .owl_container .star {
+    padding: 10px 0px;   
+}
+#slider_1 .owl_container h4{
+    padding: 10px 0px;
+    font-size: 15px;
+    letter-spacing: 6px;
+    font-family:"Barlow Condensed", serif;
+    color: var(--white);
+}
+#slider_1 .owl_container h1{
+    padding: 20px 20px;
+    font-size: 65px;
+    letter-spacing: 15px;
+    color: var(--white);
+
+}
+#slider_1 .owl_container .button_of_slider_1{
+    background-color: transparent;
+    padding: 15px 40px;
+    position: relative;
+    color: var(--white);
+    border: 1px solid var(--white);
+    font-size: 15px;
+    font-family: "Barlow Condensed", sans-serif;
+    position: relative;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+#slider_1 .owl_container .button_of_slider_1::after{
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--white);
+    top: 0;
+    right: 0;
+    transition: .3s;
+    z-index: -1;
+}
+#slider_1 .owl_container .button_of_slider_1 span{
+    position: relative;
+    z-index: 1;
+}
+
+#slider_1 .owl_container .button_of_slider_1:hover::after{
+    width: 100%;
+    left: 0;
+    color: var(--black);
+}
+#slider_1 .owl_container .button_of_slider_1:hover span{
+    color: var(--black);
+}
+.section_slider_1 .contact{
+    transform: rotate(-90deg);
+    width: 300px;
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+}
+.section_slider_1 .contact .icon {
+    border: 1px solid var(--white);   
+    font-weight: 100;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+.section_slider_1 .contact .icon a i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    color: var(--white);
+    transform: rotate(90deg);
+}
+.section_slider_1 .contact .info{
+    font-size: 20px;
+}
+.section_slider_1 .contact .info .first{
+    color: var(--white);
+    letter-spacing: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.section_slider_1 .contact .info .second{
+    color: var(--orange);
+    font-size: 30px;
+}
+.section_slider_1 .conformation_details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    height: 50px;
+    background-color: var(--white);
+    padding: 0px!important;
+}
+
+.section_slider_1 .conformation_details div{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+}
+.section_slider_1 .conformation_details div div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+}
+.section_slider_1 .conformation_details div div span{
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 100;
+    line-height: 25px;
+}
+.section_slider_1 .conformation_details div div input,
+.section_slider_1 .conformation_details div div:hover input
+{
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+}
+
+.section_slider_1 .conformation_details div button{
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    background-color: var(--orange_for_headers);
+    border: none;
+    color: var(--white);
+    line-height: 25px;
+    text-transform: uppercase;
+    transition: .3s ;
+}
+.section_slider_1 .conformation_details div:hover button{
+    background-color: var(--black);
+    color: var(--white);
+}
+input[type="text"]:focus{
+    outline: none;
+}
+/* =========================================  owl carousel  css end ==========================================  */
+
+/* =========================================  information section is start ==========================================  */
+
+#information_1 .container .content_1
+{
+    flex: 0 0 50%;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#information_1 .container .content_1 .star a i{
+    color: var(--orange);
+    padding-bottom: 20px;
+}
+#information_1 .container .content_1 h4{
+    letter-spacing: 6px;
+    padding-bottom: 20px;
+
+}
+#information_1 .container .content_1 h1{
+    font-size: 45px;
+    font-family: Barlow, sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+#information_1 .container .content_1 p{
+    margin-bottom: 20px;
+}
+#information_1 .container .content_2,
+#information_1 .container .content_3{
+    flex: 0 0 25%;
+}
+#information_1 .container .content_2 img,
+#information_1 .container .content_3 img
+{
+    width: 295px;
+}
+#information_1 .container .content_1 .reservation i{
+    font-size: 30px;
+    padding-top: 10px;
+    color: rgba(0, 0, 0, 0.5);
+}
+#information_1 .container .content_1 .reservation .div_1{
+    padding-left: 30px;
+    font-size: 18px;
+}
+#information_1 .container .content_1 .reservation .div_2{
+    padding-left: 30px;
+    font-size: 25px;
+    color: var(--orange);
+}
+#information_1 .content_2{
+    margin-top: 100px;
+    margin-right: 20px;
+}
+/* =========================================  information section is end ==========================================  */
+
+/* ========================================= image caption is start ==========================================  */
+.hover_img_1{
+    background-color: var(--background);
+}
+.hover_img_1 .images{
+    position: relative;
+}
+.hover_img_1 .first_line{
+    letter-spacing: 3px;
+    word-spacing: 5px;
+}
+.hover_img_1 .second_line{
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    font-size: 50px;
+    padding: 10px 0;
+}
+.hover_img_1 .container .main_div {
+    flex-wrap: wrap;
+    column-gap: 5px;
+    row-gap: 10px;
+    justify-content: space-between;
+}
+.hover_img_1 .container .main_div div:nth-child(1),
+.hover_img_1 .container .main_div div:nth-child(2),
+.hover_img_1 .container .main_div div:nth-child(3){
+    width: calc(33.33% - 20px);
+}
+.hover_img_1 .container .main_div div:nth-child(4),
+.hover_img_1 .container .main_div div:nth-child(5){
+    width: calc(50% - 20px);
+}
+.hover_img_1 .container .main_div div img{
+    width: 100%;
+    transition: .3s;
+}
+.hover_img_1 .container .main_div .images{
+    position: relative;
+    overflow: hidden;
+}   
+.hover_img_1 .container .main_div .images .layer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: .3s;
+    z-index: 2;
+}
+.hover_img_1 .container .main_div .images:hover img{
+    transform: scale(1.1);
+}
+.hover_img_1 .container .main_div .images:hover .layer{
+    background-color: rgba(0, 0, 0, 0.3 );
+}
+.hover_img_1 .container .main_div .images .layer .inner_text{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    transition: .3s;
+    padding-left: 20px;
+    bottom: -20px;
+}
+.hover_img_1 .container .main_div .images:hover .layer .inner_text{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    transition: .3s;
+    padding-left: 20px;
+    bottom: 40px;
+}
+.hover_img_1 .container .main_div .images .layer .inner_text div{
+    width: 100%;
+}
+.hover_img_1 .container .main_div .images .layer .inner_text div:nth-child(3){
+    height: 1px;
+    background-color: var(--white);
+    transition-delay: .3s;
+    width: 50px;
+    margin: 10px 0;
+    transition: .1s;
+}
+.hover_img_1 .container .main_div .images:hover .layer .inner_text div:nth-child(3){
+    width: 80%;
+    height: 1px;
+    transition:  1s;
+} 
+.hover_img_1 .container .main_div .images .layer .inner_text div:nth-child(1),
+.hover_img_1 .container .main_div .images .layer .inner_text div:nth-child(2){
+    color: var(--white);
+}
+.hover_img_1 .container .main_div .images .layer .inner_text div:nth-child(1){
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+.hover_img_1 .container .main_div .images .layer .inner_text div:nth-child(2){
+    font-size: 28px;
+    font-family: 'Gilda Display', serif;
+}
+.hover_img_1 .container .main_div .images .layer .inner_text div:nth-child(4) ul li{
+    display: inline-block;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+.hover_img_1 .container .main_div .images .layer .inner_text div:nth-child(4) ul li a{
+    color: var(--white);
+}
+
+/* ========================================= image caption is end ==========================================  */
+/* ============================================ extra services start ======================================= */
+
+
+.background_500{
+    background-color: var(--black);
+
+}
+.extra_services_1 .service_1{
+    width: 33.33%;
+    margin: 20px;
+}
+.extra_services_1 .service_1 .first_demo{
+    font-size: 15px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    color: var(--orange_for_headers);
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 6px;
+    margin-bottom: 5px;
+    padding-bottom: 20px;
+}
+.extra_services_1 .service_1 .second_demo{
+    font-size: 45px;
+    font-family: 'Gilda Display', serif;
+    font-weight: 400;
+    color: var(--white);
+    position: relative;
+    margin-bottom: 20px;
+    line-height: 1.25em;
+}
+.extra_services_1 .service_1 .third_demo,
+.extra_services_1 .service_1 .fourth_demo{
+    color: #adadad;
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.75em;
+    color: var(gray);
+    margin-bottom: 20px;
+}
+.extra_services_1 .service_1 .reservation .icon{
+    width: 50px;
+    color: var(--white);
+    font-size: 20px;
+}
+.extra_services_1 .service_1 .reservation .text .color_2{
+    color: var(--gray);
+}
+.extra_services_1 .service_1 .reservation .text a{
+    font-size: 24px;
+    color: #8e6d45;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 1px;
+}
+.extra_services_1 .service_2{
+    width: 66.66%;
+    /* margin: 20px;  */
+
+}
+.extra_services_1 .service_2 {
+    /* padding-left: 40px; */
+}
+.extra_services_1 .owl-theme .owl-dots .owl-dot.active span{
+    background-color: var(--orange_for_headers);
+}
+.extra_services_1 .owl-theme .owl-dots .owl-dot span{
+    border: 1px solid var(--white);
+    background-color: transparent;
+    width: 12px;
+    height: 12px;
+}
+.extra_services_1 .service_2 .desc{
+    padding: 40px;
+    background-color: var(--white);
+}
+
+.pricing_card .name{
+    line-height: 1;
+    margin: 0;
+    font-family: 'Gilda Display', serif;
+    font-size: 24px;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+.pricing_card .amount{
+    line-height: 1;
+    font-family: 'Gilda Display', serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: var(--orange_for_headers);
+}
+.pricing_card .amount span{
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    color: var(--gray);
+}
+.pricing_card .list li{
+    position: relative;
+    font-size: 15px;
+    padding-left: 30px;
+    margin: 20px;
+}
+.pricing_card .list li i{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 15px;
+    color: var(--orange_for_headers);
+}
+
+
+/* ============================================ extra services end ======================================= */
+
+/* ============================================ background is start here ======================================= */
+
+.background_1{
+    background-image: url(../imges/asset\ 33.jpeg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+.background_1::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+.background_1 .text{
+    width: 100%;
+    text-align: center;
+    color: var(--orange);
+}
+.background_1 .text .section_subtitle {
+    font-size: 20px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    color: var(--background);
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 6px;
+    margin-bottom: 5px;
+    padding-top: 20px;
+}
+.background_1 .text .section_title{
+    font-size: 45px;
+    font-family: 'Gilda Display', serif;
+    font-weight: 400;
+    color: var(--white);
+    position: relative;
+    margin-bottom: 20px;
+    line-height: 1.25em;
+}
+.background_1 .border_1 span::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--white);
+    border-radius: 50%;
+    transition: .3s;
+}
+.background_1 .border_1 span:hover::before{
+    transform: scale(0);
+}
+
+.background_1 .border_1 span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    position: relative;
+    border-radius: 50%;
+}
+.background_1 .border_1 span i{
+    width: 80px;
+    height: 80px;
+    padding-top: 30px;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    font-size: 20px;
+    position: relative;
+    z-index: 5;
+    outline-offset: 2px;
+    outline: 1px solid var(--white);
+    transition: .3s;
+}
+.background_1 .border_1 span i:hover{
+    background-color: transparent;
+    color: var(--white);
+}
+
+/* ============================================ background is end here ======================================= */
+/* ============================================ our services is start here ======================================= */
+
+
+.our_services .container .first{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.our_services .container .first .o_s_icon {
+    flex: 0 0 calc(33.33% - 10px );
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 50px 20px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.our_services .container div .o_s_icon  i{
+    font-size: 50px;
+    color: var(--orange_for_headers);
+}
+.our_services .container div .o_s_icon h5{
+    font-size: 24px;
+    padding: 20px 0px;
+}
+
+        
+/* ============================================ our services is end here ======================================= */
+/* ============================================ slider is start from here ======================================= */
+.slider_3{
+    background-image: url(../imges/asset\ 33.jpeg);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+.slider_3::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.slider_3 .extra_padding{
+    padding: 0px 20%;
+}
+.slider_3 .extra_padding h6{
+    font-family: 'Barlow Condensed', sans-serif;
+    color: var(--white);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 9;
+}
+.slider_3 .extra_padding h4{
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 9;
+}
+.slider_3 .extra_padding .line{
+    width: 30%;
+    height: 1px;
+    background-color:  var(--white);
+    margin-bottom: 25px;
+}
+#slider_3 .owl_header{
+    color: var(--white);
+}
+#slider_3 .owl_main_header .small_img{
+
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+#slider_3 .owl_main_header .small_img img{
+
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+#slider_3 .owl_main_header .cont{
+    margin-left: 40px;
+}
+#slider_3 .owl_main_header .cont .star_line{
+    color: var(--orange);
+}
+#slider_3 .owl_main_header .cont h6{
+    font-size: 15px;
+    margin: 10px 0px;
+    padding-top: 10px;
+    font-weight: 400;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: var(--white);
+    line-height: 1em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+#slider_3 .owl_main_header .cont .post_section{
+    color: var(--white);
+    margin-top: 10px;
+}
+#slider_3.owl-theme .owl-dots .owl-dot.active span{
+    background-color: var(--orange);
+    border: 1px solid var(--white);
+}
+#slider_3.owl-theme .owl-dots .owl-dot span{
+    background-color: transparent;
+    border: 1px solid var(--white);
+    width: 15px;
+    height: 15px;
+}
+
+
+
+/* ============================================ slider is end from here ======================================= */
+
+/* ============================================slider most important info is start =================================== */
+
+.most_imp_info {
+}
+.most_imp_info .img{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.most_imp_info .img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.most_imp_info .img:hover img{
+    transform: scale(1.1);
+}
+.most_imp_info .another_service_info{
+    padding: 30px;
+    margin: 20px 0px;
+    width: 50%;
+    height: 100%;
+}
+
+.most_imp_info .another_service_info .content{
+
+}   
+
+    
+.most_imp_info .another_service_info h6{
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: var(--gray);
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.most_imp_info .another_service_info h4{
+    margin: 0 0 10px 0;
+    font-size: 32px;
+    color: var(--black);
+    font-weight: 400;
+    line-height: 1.5em;
+}
+.most_imp_info .another_service_info div .btn{
+    padding: 15px 40px;
+    font-size: 17px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 9;
+    border: none;
+    color: var(--black);
+    background-color: var(--orange_for_headers);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: .3s;
+}
+.most_imp_info .another_service_info div .btn:hover{
+    color: var(--white);
+}
+.most_imp_info .another_service_info div .btn::before{
+   content: '';
+   width: 0%;
+   background-color: var(--black);
+   position: absolute;
+   top: 0%;
+   color: var(--white);
+   right: 0%;
+   height: 100%;
+   transition: .3s;
+}
+.most_imp_info .another_service_info div .btn:hover::before{
+    width: 100%;
+    left: 0;
+}
+.most_imp_info .another_service_info div .btn span{
+    position: relative;
+    z-index: 99;
+
+}
+/* ============================================most important information is end =================================== */
+
+/* ============================================slider 4 is start =================================== */
+#slider_4 .images{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+}
+#slider_4 .images img{
+    width: 100%;
+    transition: .3s;
+    position: relative;
+}
+
+#slider_4 .item:hover img{
+    transform: scale(1.1);
+}
+#slider_4 .layer{
+    position: relative;
+    width: 80%;
+    background-color: var(--white);
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 30px;
+    margin-top: -70px;
+    transition: .3s;
+    z-index: 2;
+}
+
+#slider_4 .item:hover .layer{
+    margin-top: -170px;
+}
+#slider_4 .images::before{
+    background-color: rgba(0, 0, 0, .5);
+    content: '';
+    position: absolute;
+    z-index: 99999999;
+    top: 0;
+    left: 0;
+}
+#slider_4 .inner_text h1
+{
+    font-size: 15px;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+    
+}
+
+#slider_4 .inner_text div{
+    color: #222;
+    font-size: 24px;
+    font-family: 'Gilda Display', serif;
+    font-weight: 400;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+}
+/* ============================================slider 4 is end =================================== */
+
+/* ================================================ end information is here ================================ */
+.end_info{
+    background-image: url(../imges/asset\ 33.jpeg);
+    height: 70vh;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+.first_information_part,
+.second_information_part{
+    width: 41%;
+}
+.end_info_main{
+    justify-content: space-between;
+}
+.first_information_part i{
+    color: var(--orange);
+    padding-bottom: 20px;
+}
+.first_information_part h5{
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: var(--white);
+    font-family: 'Gilda Display', serif;
+    font-weight: 400;
+}
+.reservation .reservation_phone i{
+    font-size: 30px;
+    padding-top: 10px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.reservation_details{
+    color: var(--white);
+    padding-left: 20px;
+}
+.reservation_number
+{
+    font-size: 25px;
+    color: var(--white);
+    padding-left: 20px;
+}
+.end_info .reservation{
+    padding-bottom: 20px;
+}
+.checked_details,
+.checked_details i
+{
+    color: var(--white);
+}
+.second_information_part{
+    background-color: var(--white);
+    padding: 60px 45px;
+    background-color: var(--lb);
+}
+.booking_box{
+}
+
+.booking_box .head_box h6{
+    font-size: 15px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    color: #666;
+    text-transform: uppercase;
+    /* position: relative; */
+    letter-spacing: 6px;
+    margin-bottom: 10px;
+}
+.booking_box .head_box h4{
+        font-size: 27px;
+        font-weight: 400;
+        color: #222;
+        border-bottom: 1px solid #ececec;
+        padding-bottom: 15px;
+        font-family: 'Gilda Display', serif;
+}
+.booking_inner{
+    padding-top: 20px;
+}
+.booking_inner input[type="text"]{
+    padding: 20px;
+    width: 100%;
+    font-size: 15px;
+    border: none;
+    margin: 10px 0;
+}
+.booking_inner input[type="button"]{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    background-color: var(--orange_for_headers);
+    margin-top: 20px;
+}
+
+.booking_inner ul li div input{
+    flex: 0 0 50%;
+}
+
+/* ================================================ end information is here ================================ */
+
+/* ============================================ clients ============================ */
+.clients .clients_width {
+    width:  55%;
+    padding: 30px 0;
+}   
+/* ============================================ clients ============================ */
+
+/* ==================================== footer =============================== */
+.footer_background{
+    background-color: var(--black_background);
+}
+footer .f_1,
+footer .f_2,
+footer .f_3
+{
+    width: 33.33%;
+    margin: 15px;
+}
+
+footer .f_2 ul li{
+    line-height: 10px;
+}
+footer .f_2 ul li:hover{
+    list-style: circle;
+}
+footer .f_2{
+    margin-left: 8%!important;
+}
+
+
+footer h3{
+    color: var(--white);
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Gilda Display', serif;
+    font-weight: 400;
+}
+footer  p,
+footer li{
+    color: var(--gray);
+    padding-bottom: 20px;
+}
+
+.footer_contact_phone{
+    color: var(--white);
+    font-size: 30px;
+
+}
+.footer_contact_phone span{
+    padding-left: 10px;
+    font-size: 20px;
+}
+.footer_gmail{
+    color: var(--white);
+    text-decoration: underline solid var(--orange_for_headers);
+    text-underline-offset: 5px;
+}
+.footer_icon i{
+    padding-left: 10px;
+    
+}
+.footer_icon{
+    color: var(--white);
+    background-color: transparent;
+}   
+.footer_language{
+    text-transform: capitalize;
+    padding: 15px 25px;
+    color: var(--gray);
+    width: 150px;
+    background-color: rgba(128, 128, 128, 0.131);
+}
+.footer_language i{
+    padding-left: 20px;
+}
+/* ==================================== footer =============================== */
+
+/* ========copy right =========== */
+
+.copy_right div{
+    text-align: center;
+    background-color: var(--black);
+    color: var(--gray);
+    padding: 30px;
+    font-size: 12px;
+}
+.copy_right div span{
+    color: var(--white);
+    transition: .3s;
+}
+.copy_right div span:hover{
+    color: var(--orange_for_headers);
+}
+
+/* ========copy right =========== */
